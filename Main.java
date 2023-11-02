@@ -24,14 +24,7 @@ public class Main {
     }
 
     public static void verify(Set<Integer> array, Integer number) {
-        boolean isIn = false;
-        for (Integer element : array) {
-            if (array.contains(number)) {
-                isIn = true;
-                break;
-            }
-        }
-        if (isIn) {
+        if (array.contains(number)) {
             System.out.println("The element " + number + " is in the array.");
         } else {
             System.out.println("The element " + number + " isn't in the array.");
