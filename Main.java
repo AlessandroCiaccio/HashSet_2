@@ -26,8 +26,9 @@ public class Main {
     public static void verify(Set<Integer> array, Integer number) {
         boolean isIn = false;
         for (Integer element : array) {
-            if (element == number) {
+            if (array.contains(number)) {
                 isIn = true;
+                break;
             }
         }
         if (isIn) {
